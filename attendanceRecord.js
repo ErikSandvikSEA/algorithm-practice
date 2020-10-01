@@ -10,11 +10,11 @@ var attendanceRecord = function(s) {
             absent = true
         } else if (day === 'L'){
             continuousTardies++
+            if(continuousTardies>2){
+                return false
+            }
         } else {
             continuousTardies = 0
-        }
-        if(continuousTardies>2){
-            return false
         }
     }
     return true
