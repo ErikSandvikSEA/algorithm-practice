@@ -10,8 +10,10 @@ var lengthOfLongestSubstring = function(s) {
         }
         const current = i - lastDupe + 1
         if (current > maxLength) {
-            maxLength = i - lastDupe + 1;
+            maxLength = current
         }
     }
     return maxLength;
 };
+
+
