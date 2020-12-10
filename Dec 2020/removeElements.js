@@ -19,5 +19,3 @@ var removeElements = function(head, val) {
     }
     return head
 };
-
-
